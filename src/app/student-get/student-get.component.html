@@ -1,0 +1,41 @@
+<br><div class="mk">
+  <div class="card">
+      <table>
+          <tr>
+              <th>username</th>
+              <th>password</th>
+              
+              <th>Action</th>
+          </tr>
+          <tr *ngFor="let item of alldata">
+              <td>{{item.username}}</td>
+             
+              <td>{{item.password}}</td>
+              <td><button type="button" (click)="DeleteData(item.id)">delete</button>
+              
+              <button type="button" (click)="onedit(item)">edit</button>
+</td>
+          </tr>
+      </table>
+  </div>
+</div>
+
+<div class="ak" *ngIf="show">
+  <form [formGroup]="frm" >
+      <h2>Student Registation</h2>
+      <dt>USERName</dt>
+      <input type="text" placeholder="Enter Name" name="name" class="form-control"  required formControlName="username">
+      <dt>Password</dt>
+      <input type="text" placeholder="Enter address" name="password" class="form-control" formControlName="password">
+      <button class="btn btn-primary" (click)="up()">update</button>
+      <button class="btn btn-danger" (click)="can()">cancel</button>
+
+      </form></div>
+      <br> <br> <br> <br> <br>
+      <h1>The video element</h1>
+
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video> 

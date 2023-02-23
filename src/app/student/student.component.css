@@ -1,0 +1,11 @@
+.ak{
+    width: 550px;
+    height: auto;
+    text-align: center;
+    background-color: darkcyan;
+    position: fixed;
+}
+.card{
+    margin-left: 450px;
+    margin-top: 40px;
+}
